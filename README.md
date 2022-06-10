@@ -75,5 +75,3 @@ char *get_next_line(int fd);
 * Bonus 2: 프로그램 실행 중 여러 file descriptor 값을 받더라도 함수가 문제없이 동작해야 합니다. 구체적으로 업타임 중 fd가 다른 함수의 호출이 여러번 일어나고, 이전에 호출하였던 fd를 매개변수로 get_next_line을 다시 호출하더라도 해당하는 fd 값에 대한 reading thread가 유지되어야만 합니다.
   * 이를 수행하기 위해 fixed string array를 추가적으로 생성하여, 해당하는 각 fd 값에 대해 static 변수가 기록될 수 있도록 하였습니다. 
 
-
-# get_next_line
